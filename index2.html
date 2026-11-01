@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>МИДиС - 3D Карта (1 и 2 этаж)</title>
+    <script src="babylon.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div id="error-log"></div>
+    <div id="floor-Controls">
+        <button id="btn-floor-2" onclick="switchFloor(2)">2</button>
+        <button id="btn-floor-1" class="active" onclick="switchFloor(1)">1</button>
+    </div>
+    <div id="info-panel">Этаж 1 — Кликни на любой кабинет</div>
+
+    <canvas id="renderCanvas"></canvas>
+
+    <script src="app.js"></script>
+</body>
+</html>
